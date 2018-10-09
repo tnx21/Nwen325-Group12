@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Banana Shop</title>
+     <link rel="stylesheet" href="../css/store.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
@@ -15,10 +16,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../index.html">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Product</a>
+        <a class="nav-link" href="store.html">Product <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,15 +39,56 @@
     </form>
   </div>
 </nav>
+  
+  
    
-  <ul>
-      <li>Color</li>
-      <li>Size</li>
-      <li>Flavour</li>
-      <li>Origin</li>
-  </ul>
+
+   
+   <div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Size</a>
+  <a href="#clients">Origin</a>
+  <a href="#contact">Flavour</a>
+  <button class="dropdown-btn">Colour 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Yellow</a>
+    <a href="#">Deep orange</a>
+    <a href="#">Red</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
+
+<div class="main">
+  <h2>Main shopping page</h2>
+  <p>Should implement the main functionalities. e.g. Login tab, Sign-up tab, Cart, Filter....</p>
+ 
+</div>
     
     
+    
+    
+    
+    
+    
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 
 
