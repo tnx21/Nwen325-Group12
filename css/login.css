@@ -1,16 +1,39 @@
 /* Bordered form */
 form {
     border: 3px solid #f1f1f1;
+    display: inline-block;
+}
+
+
+.loginForm{
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border: none;
+  padding: 15px;
+}
+
+.loginButton{
+  border-radius: 10px;
+}
+
+.loginBox{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  top: 150px;
+  max-width: 500px;
+  min-width: 350px;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0 0 30px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 /* Set a style for all buttons */
@@ -23,6 +46,7 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
 
 /* Add a hover effect for buttons */
 button:hover {
@@ -40,11 +64,18 @@ button:hover {
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
+    padding-bottom: 20px;
+}
+
+.imgcontainer h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 /* Avatar image */
 img.avatar {
-    width: 10%;
+    width: 20%;
+    padding-bottom: 20px;
 }
 
 /* Add padding to containers */
@@ -55,19 +86,27 @@ img.avatar {
 /* options containers */
 .optContainer {
 	text-align: center;
-    padding: 20px;
-	padding-left: 30px;
+  padding: 20px;
 }
 
 /* The "Forgot password" text */
 span.psw {
-    padding-top: 0px;
+  padding-top: 0px;
 	padding: 50px;
 }
 
 /* The "Signup" link */
 span.signUp {
     padding-top: 16px;
+}
+
+.greenLink{
+  color: #4CAF50;
+}
+
+.greenLink:hover{
+  color: black;
+  text-decoration: none;
 }
 
 /* Change styles for span and cancel button on extra small screens */
