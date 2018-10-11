@@ -1,9 +1,8 @@
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    /**border: 3px solid #f1f1f1;**/
     display: inline-block;
 }
-
 
 .loginForm{
   border-radius: 20px;
@@ -13,14 +12,23 @@ form {
 }
 
 .loginButton{
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 100px;
+  width: 50%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.loginButton:hover{
+  width: 55%;
 }
 
 .loginBox{
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  top: 150px;
+  top: 120px;
   max-width: 500px;
   min-width: 350px;
 }
@@ -102,11 +110,17 @@ span.signUp {
 
 .greenLink{
   color: #4CAF50;
+  transition: 0.5s;
 }
 
 .greenLink:hover{
   color: black;
   text-decoration: none;
+}
+
+.searchForm{
+  display: flex;
+  flex-flow: none;
 }
 
 /* Change styles for span and cancel button on extra small screens */
