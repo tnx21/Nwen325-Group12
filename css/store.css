@@ -12,7 +12,9 @@ body {
 .add-to-cart{
     width: 20%;
 }
-
+#navBAR{
+    position: fixed;
+}
 
 
 
